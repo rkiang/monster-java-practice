@@ -1,6 +1,6 @@
 package com.example.monster;
 
-public class Monster {
+public abstract class Monster {
     public String getName() {
         return name;
     }
@@ -10,14 +10,5 @@ public class Monster {
         this.name = name;
     }
 
-/*
-    public Monster(){
-
-    }
-*/
-
-
-    public String attack() {
-        return getName()+ " default attack";
-    }
+    public abstract String attack();
 }

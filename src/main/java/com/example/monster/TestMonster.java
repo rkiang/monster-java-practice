@@ -16,8 +16,7 @@ public class TestMonster {
                 new CookieMonster("Cookie")
         };
 
-        MonsterHandler monsterHandler = new MonsterHandler();
-        monsterHandler.handleMonsters(monsters);
+        MonsterHandler.handleMonsters(monsters);
 
         // Invoke the actual implementation
 /*        System.out.println(m1.attack()); // Run FireMonster's attack()
@@ -27,7 +26,7 @@ public class TestMonster {
 /*        m1 = new StoneMonster("a2b2"); // upcast
         System.out.println(m1.attack()); // Run StoneMonster's attack()*/
         // We have a problem here!!!
-        Monster m4 = new Monster("u2u2");
-        System.out.println(m4.attack()); // garbage!!!
+/*        Monster m4 = new Monster("u2u2");
+        System.out.println(m4.attack()); // garbage!!!*/
     }
 }

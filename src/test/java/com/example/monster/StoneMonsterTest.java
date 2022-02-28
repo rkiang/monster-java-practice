@@ -10,6 +10,6 @@ class StoneMonsterTest {
     void attack_should_return_valid_data() {
         StoneMonster stoneMonster = new StoneMonster("test");
         String attackMessage = stoneMonster.attack();
-        org.assertj.core.api.Assertions.assertThat(attackMessage).isEqualTo("Attack with stones");
+        org.assertj.core.api.Assertions.assertThat(attackMessage).isEqualTo("test Attack with stones");
     }
 }
